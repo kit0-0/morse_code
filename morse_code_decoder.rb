@@ -23,3 +23,8 @@ class MorseCodeDecoder
     decoded_words.join(' ')
   end
 end
+
+decoder = MorseCodeDecoder.new
+message = '.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...'
+decoded_message = decoder.decode(message)
+puts decoded_message
